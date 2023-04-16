@@ -7,9 +7,18 @@ export function App() {
 
     return (
         <section className='App'>
-            <TwitterFollowCard name='Diego Ortiz Gamboa' userName='diegofergamboa' formatUserName={formatUserName}/>
-            <TwitterFollowCard name='Fernando Ortiz' userName='fernandoortiz'formatUserName={formatUserName}/>
+            <TwitterFollowCard
+                isFollowing={false}
+                name='Diego Ortiz Gamboa'
+                userName='diegofergamboa'
+                formatUserName={formatUserName} />
+            <TwitterFollowCard
+                isFollowing
+                name='Fernando Ortiz'
+                userName='fernandoortiz'
+                formatUserName={formatUserName} />
         </section>
     )
 }
 
+ 

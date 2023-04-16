@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TwitterFollowCard = ({ formatUserName, userName, name, isFollowing }) => {
+export const TwitterFollowCard = ({ formatUserName, userName='Unknown', name='Unknown name', isFollowing }) => {
 
     return (
         <article className='tw-followCard'>
