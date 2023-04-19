@@ -1,6 +1,8 @@
 import React from 'react'
 
 export const TwitterFollowCard = ({ formatUserName, userName='Unknown', name='Unknown name', isFollowing }) => {
+    const text = (isFollowing) ? 'Follow' : 'Following'
+    const buttonClassName = (isFollowing) ? 'tw-followCard-button is-follow' : 'tw-followCard-button'
 
     return (
         <article className='tw-followCard'>
@@ -12,8 +14,8 @@ export const TwitterFollowCard = ({ formatUserName, userName='Unknown', name='Un
                 </div>
             </header>
             <aside>
-                <button className='tw-followCard-button'>
-                    Follow
+                <button className='{buttonClassName}'>
+                    { text }
                 </button>
             </aside>
         </article>
