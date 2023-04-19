@@ -1,6 +1,13 @@
 import React from 'react'
+import { useState } from 'react'
 
-export const TwitterFollowCard = ({ formatUserName, userName='Unknown', name='Unknown name', isFollowing }) => {
+
+export const TwitterFollowCard = ({ formatUserName, userName='Unknown', name='Unknown name' }) => {
+    const [isFollowing , setItsFollowing] = useState(false)
+    const handleFollowing = () => {
+        setItsFollowing(!isFollowing)
+    }
+
     const text = (isFollowing) ? 'Follow' : 'Following'
     const buttonClassName = (isFollowing) ? 'tw-followCard-button is-follow' : 'tw-followCard-button'
 
@@ -14,8 +21,8 @@ export const TwitterFollowCard = ({ formatUserName, userName='Unknown', name='Un
                 </div>
             </header>
             <aside>
-                <button className='{buttonClassName}'>
-                    { text }
+                <button onClick={handleFollowing} className={buttonClassName}>
+                    {text}
                 </button>
             </aside>
         </article>
