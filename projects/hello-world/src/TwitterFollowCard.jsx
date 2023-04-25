@@ -2,8 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 
 
-export const TwitterFollowCard = ({ formatUserName, userName='Unknown', name='Unknown name' }) => {
-    const [isFollowing , setItsFollowing] = useState(false)
+export const TwitterFollowCard = ({ formatUserName, userName='Unknown', name='Unknown name', initialIsFollowing }) => {
+    const [isFollowing , setItsFollowing] = useState(initialIsFollowing)
     const handleFollowing = () => {
         setItsFollowing(!isFollowing)
     }

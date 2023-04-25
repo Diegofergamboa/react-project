@@ -4,7 +4,7 @@ import TwitterFollowCard from './TwitterFollowCard';
 
 export function App() {
     const formatUserName = (userName) => `@${userName}`
-
+    
     return (
         <section className='App'>
             <TwitterFollowCard
@@ -12,6 +12,7 @@ export function App() {
                 name='Diego Ortiz Gamboa'
                 userName='diegofergamboa'
                 formatUserName={formatUserName}
+                initialIsFollowing={true}
                 />
             <TwitterFollowCard
                 isFollowing
