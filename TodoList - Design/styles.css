@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* https://www.flaticon.com/free-animated-icon/delivery_6416372?term=delete&page=1&position=5&origin=search&related_id=6416372 */
+/* https://ui8.net/ui8/products/brainwave-ai-ios-ui-kit?rel=tmtt */
+/* Color root => #1D5D9B
+#75C2F6
+#F4D160
+#FBEEAC
+rgb(29, 93, 155)
+rgb(117, 194, 246)
+rgb(244, 209, 96)
+rgb(251, 238, 172) */
